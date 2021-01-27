@@ -20,14 +20,14 @@ sudo systemctl enable dump1090-fa.service
 sudo service dump1090-fa start
 
 #Install piaware
-wget https://flightaware.com/adsb/piaware/files/packages/pool/piaware/p/piaware-support/piaware-repository_4.0_all.deb
-sudo dpkg -i piaware-repository_4.0_all.deb
-sudo apt-get update
-sudo apt-get install piaware piaware-web rtl-sdr -y
+# wget https://flightaware.com/adsb/piaware/files/packages/pool/piaware/p/piaware-support/piaware-repository_4.0_all.deb
+# sudo dpkg -i piaware-repository_4.0_all.deb
+# sudo apt-get update
+# sudo apt-get install piaware piaware-web rtl-sdr -y
 
-if [ ! -f "/etc/armbian-release" ]
-    then
-      sudo apt-get install piaware-support -y
-    fi
+# if [ ! -f "/etc/armbian-release" ]
+#    then
+#      sudo apt-get install piaware-support -y
+#    fi
 
 echo "***** End script piaware install ******"
