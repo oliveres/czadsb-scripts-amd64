@@ -79,7 +79,7 @@ then
 
   ~/czadsb-scripts/starters/autostart.sh
 
-  ~/czadsb-scripts/addons/*.sh
+#  ~/czadsb-scripts/addons/*.sh
 
   sudo echo $file_version | sudo tee -a $file
 
