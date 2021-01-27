@@ -12,7 +12,7 @@ cd mlat-client
 git checkout v0.2.11
 
 . /etc/os-release
-if [ "$VERSION_ID" = "10" ]; then
+if [ "$VERSION_ID" = "20.04" ]; then
     echo "Pouzivate Raspbian Buster, aplikuji upravu nutnou pro spravny bez klienta"
     sudo apt-get install  tcl8.6-dev autoconf python3-venv dh-systemd libz-dev -y
     wget 'https://github.com/anthony-tuininga/cx_Freeze/archive/6.0.tar.gz'
