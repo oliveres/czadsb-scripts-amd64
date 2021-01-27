@@ -20,7 +20,7 @@ elif cat /proc/device-tree/model | grep -q 'Raspberry'; then
     cp ~/czadsb-scripts/mm2/modesmixer2-rpi2-3_deb9 ~/modesmixer2/modesmixer2
 elif [ `getconf LONG_BIT` = "64" ]; then
     echo "64 bit system detected, using AllWinner H5 64bit version"
-    cp ~/czadsb-scripts/modesmixer2 ~/modesmixer2/modesmixer2
+    cp ~/czadsb-scripts/mm2/modesmixer2 ~/modesmixer2/modesmixer2
 else
     echo "Unable to found right version of MM2, using default one, its possible that it will not work" 2>&1
     cp ~/czadsb-scripts/mm2/modesmixer2-rpi2-3_deb9 ~/modesmixer2/modesmixer2
