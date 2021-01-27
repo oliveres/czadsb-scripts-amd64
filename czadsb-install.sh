@@ -27,8 +27,7 @@ then
 
 
   echo "========== Updating system =========="
-  sudo echo "Europe/Prague" > /etc/timezone
-  sudo dpkg-reconfigure -f noninteractive tzdata
+  sudo timedatectl set-timezone Europe/Prague
   #Update and upgrade
   sudo apt-get update
   sudo apt-get upgrade -y -f
