@@ -49,9 +49,9 @@ then
   wget http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1.4_amd64.deb
   sudo dpkg -i multiarch-support_2.27-3ubuntu1.4_amd64.deb
   sudo cp ~/czadsb-scripts/rc.local /etc/rc.local
-  chmod +x /etc/rc.local
+  sudo chmod +x /etc/rc.local
   sudo cp ~/czadsb-scripts/rc-local.service /etc/systemd/system/rc-local.service
-  systemctl enable rc-local
+  sudo systemctl enable rc-local
 
   echo "========== CZADSB scripts installation =========="
 
