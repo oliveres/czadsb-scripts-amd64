@@ -5,4 +5,7 @@ Instalační skript pro CZADSB od Pavla Koníře, který je upravený tak, aby f
 ```
 bash -c "$(wget -O - https://raw.githubusercontent.com/oliveres/czadsb-scripts/master/czadsb-install.sh)"
 ```
-Pokud použijete virtualizaci, je pravděpodobné, že budete muset přepojit celý USB controller pomocí PCI passthrough do virtuálního serveru, jinak bude blbnout MLAT synchronizace. Nelze použít jen USB passthrough. Doporučená virtualizace je XCP-ng. Postup pak zde: https://xcp-ng.org/docs/compute.html#pci-passthrough
+Pokud použijete virtualizaci, je pravděpodobné, že budete muset přepojit celý USB controller pomocí PCI passthrough do virtuálního serveru, jinak bude blbnout MLAT synchronizace. Nelze použít jen USB passthrough.
+
+Doporučená virtualizace je XCP-ng. Postup pak zde: https://xcp-ng.org/docs/compute.html#pci-passthrough
+Pokud se vám v rámci tohoto návodu nebude dařit vypsat xl pci-assignable-list, tak to nevadí, mě to šlo ikdyž nic nevypsalo. Důležité neudělat chybu v čísle toho PCI zařízení - pozor na dvojtečky, jsou tam dvoje a jedna tečka. Nuly jsou doplněny z levé strany.
